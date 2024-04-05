@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif; /* Tipo de letra */
+}
+ 
+section {
+    max-width: 600px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    font-family: "League Spartan", sans-serif;
+}
+ 
+#parte1, #parte2 {
+    display: none;
+}
+ 
+@media only screen and (max-width: 600px) {
+    section {
+        max-width: 100%;
+    }
+ 
+    #parte1, #parte2 {
+        display: block;
+    }
+}
+ 
+a {
+    color: red;
+    font-family: "League Spartan", sans-serif;
+    text-decoration: none;
+}
+ 
+p {
+    text-align: justify;
+    font-family: "League Spartan", sans-serif;
+}
+  
+#titulodif{
+    font-family: "Special Elite", system-ui;
+}
+
+.bloque img {
+    margin-top: 35px;
+    margin: 5px;
+    font-family: "League Spartan", sans-serif;
+}
+ 
+ 
+.contenedor {
+    position: relative;
+    text-align: center; /* Centrar el texto */
+    font-family: "League Spartan", sans-serif;
+}
+ 
+.cabecera {
+    width: 100%; /* Ajustar tamaño de la imagen, el % lo escogemos nosotros */
+    height: 600px; /* Proporción de la imagen */
+    font-family: "League Spartan", sans-serif;
+}
+ 
+.textocabe{
+    position: absolute;
+    top: 50%; /* Posición verticalmente */
+    left: 50%; /* Posición horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar el texto en el centro */
+    color: white; /* Color texto */
+    font-size: 24px; /* Tamaño texto */
+    font-weight: bold; /* Poner el texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    font-family: "League Spartan", sans-serif;
+}
+
+table{
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: "League Spartan", sans-serif;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td,th{
+    font-family: "League Spartan", sans-serif;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table img{
+    width: 128;
+    height: 128px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+footer{
+    height: 80px;
+    background-color: black; /* color de fondo */
+    color: white; /* color de letra */
+    text-align: center; /* centrar texto */
+    display: grid;
+    grid-template-rows: 40%, 1fr;
+}
+
+footer div{
+    grid-area: 2/1;
+}
